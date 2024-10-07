@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Get Started Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="GetStartedController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="GetStartedController" customModule="BillionerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgImage" translatesAutoresizingMaskIntoConstraints="NO" id="SN1-CO-VVI">
+                                <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                                <color key="tintColor" name="textColor"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="j2j-mA-iFe">
+                                <rect key="frame" x="24" y="114" width="392" height="516.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to uxidesign.in" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yoi-Fy-aeq">
+                                        <rect key="frame" x="0.0" y="0.0" width="392" height="43"/>
+                                        <color key="tintColor" name="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <color key="textColor" name="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="ZCz-Fk-jtz">
+                                        <rect key="frame" x="0.0" y="67" width="392" height="334.66666666666669"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#1 in Design Tutorial" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9J3-2i-Llj">
+                                        <rect key="frame" x="0.0" y="425.66666666666663" width="392" height="28.666666666666686"/>
+                                        <color key="tintColor" name="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" name="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="we are the leading online community to teach the web and mobile design from basic to pro." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHl-Sf-hGd">
+                                        <rect key="frame" x="0.0" y="478.33333333333337" width="392" height="38.333333333333371"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" name="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAH-kh-Rr6">
+                                <rect key="frame" x="24" y="846" width="392" height="44"/>
+                                <color key="backgroundColor" name="btnBgColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="DUD-hs-YYa"/>
+                                </constraints>
+                                <color key="tintColor" name="btnTittleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="nAH-kh-Rr6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="BxU-fu-jma"/>
+                            <constraint firstAttribute="bottom" secondItem="SN1-CO-VVI" secondAttribute="bottom" id="D8u-f0-SC0"/>
+                            <constraint firstItem="ZCz-Fk-jtz" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.35" id="HLY-6u-Dh0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SN1-CO-VVI" secondAttribute="trailing" id="Jbe-jz-Vf9"/>
+                            <constraint firstItem="j2j-mA-iFe" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="52" id="Rkh-nQ-5cv"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="nAH-kh-Rr6" secondAttribute="bottom" constant="32" id="X01-qc-SSa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nAH-kh-Rr6" secondAttribute="trailing" constant="24" id="fop-MY-t39"/>
+                            <constraint firstItem="SN1-CO-VVI" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="gIs-X6-pfF"/>
+                            <constraint firstItem="j2j-mA-iFe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="j5k-LW-OTZ"/>
+                            <constraint firstAttribute="trailing" secondItem="j2j-mA-iFe" secondAttribute="trailing" constant="24" id="mDo-aT-rZE"/>
+                            <constraint firstItem="SN1-CO-VVI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="p8F-ff-0Vo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgImage" destination="SN1-CO-VVI" id="SUb-zx-ckW"/>
+                        <outlet property="submitButton" destination="nAH-kh-Rr6" id="38B-zq-IAY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-50" y="-48"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="342" height="300"/>
+        <image name="bgImage" width="4000" height="3000"/>
+        <namedColor name="btnBgColor">
+            <color red="0.38823529411764707" green="0.36862745098039218" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="btnTittleColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
