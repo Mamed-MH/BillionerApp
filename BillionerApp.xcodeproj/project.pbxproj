@@ -16,6 +16,8 @@
 		81088DC42CB4337400B2E646 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81088DC32CB4337400B2E646 /* Auth.storyboard */; };
 		816FDB6C2CB4381300DB5C96 /* GetStartedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816FDB6B2CB4381300DB5C96 /* GetStartedController.swift */; };
 		816FDB702CB823FB00DB5C96 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816FDB6F2CB823FB00DB5C96 /* RegisterController.swift */; };
+		816FDB722CB83B6F00DB5C96 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816FDB712CB83B6F00DB5C96 /* LoginController.swift */; };
+		81796E932CB8488A00043803 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81796E922CB8488A00043803 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		81088DC32CB4337400B2E646 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		816FDB6B2CB4381300DB5C96 /* GetStartedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedController.swift; sourceTree = "<group>"; };
 		816FDB6F2CB823FB00DB5C96 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		816FDB712CB83B6F00DB5C96 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		81796E922CB8488A00043803 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -130,6 +134,7 @@
 		81088DC62CB433F400B2E646 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				81796E912CB8486E00043803 /* Model */,
 				816FDB6E2CB823AD00DB5C96 /* Storyboard */,
 				816FDB6D2CB823A300DB5C96 /* Controller */,
 			);
@@ -167,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				816FDB6B2CB4381300DB5C96 /* GetStartedController.swift */,
+				816FDB712CB83B6F00DB5C96 /* LoginController.swift */,
 				816FDB6F2CB823FB00DB5C96 /* RegisterController.swift */,
 			);
 			path = Controller;
@@ -178,6 +184,14 @@
 				81088DC32CB4337400B2E646 /* Auth.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		81796E912CB8486E00043803 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81796E922CB8488A00043803 /* UserModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +343,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				816FDB702CB823FB00DB5C96 /* RegisterController.swift in Sources */,
+				81796E932CB8488A00043803 /* UserModel.swift in Sources */,
+				816FDB722CB83B6F00DB5C96 /* LoginController.swift in Sources */,
 				816FDB6C2CB4381300DB5C96 /* GetStartedController.swift in Sources */,
 				81088D972CB432EA00B2E646 /* ViewController.swift in Sources */,
 				81088D932CB432EA00B2E646 /* AppDelegate.swift in Sources */,
