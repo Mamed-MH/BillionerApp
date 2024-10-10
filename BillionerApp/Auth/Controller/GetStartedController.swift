@@ -19,11 +19,24 @@ final class GetStartedController:UIViewController {
     
     fileprivate func configureButton() {
         submitButton.addTarget(self, action: #selector(submitButtonClicked), for: .touchUpInside)
+        submitButton.setTitle("Get Started", for: .normal)
+    }
+    
+    fileprivate func configureUI() {
+        
     }
     
     @objc
     fileprivate func submitButtonClicked() {
-        print(#function)
+        getRegisterController()
         
     }
+    
+    fileprivate func getRegisterController(){
+        
+        let controller = UIStoryboard.init(name: "Auth", bundle: Bundle.main).instantiateViewController(identifier: "RegisterController") as? RegisterController ?? RegisterController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    
 }
