@@ -25,6 +25,7 @@ final class LoginController:UIViewController {
     fileprivate func configureUI() {
         navigationController?.setNavigationBarHidden(true, animated: true)
         configureButton()
+        configureTextField()
     }
     
     fileprivate func configureButton() {
@@ -54,16 +55,28 @@ final class LoginController:UIViewController {
     fileprivate func getRegisterController(){
         
         let controller = UIStoryboard.init(name: "Auth", bundle: Bundle.main).instantiateViewController(identifier: "RegisterController") as? RegisterController ?? RegisterController()
+        controller.deleagate = self
         navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    fileprivate func cofigureField(user:User) {
+        
+        emailField.text = user.email
+        passwordField.text = user.password
     }
 }
 
 extension LoginController:UITextFieldDelegate {
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        
-        
         guard let text = textField.text else {return}
         print(#function, text)
+    }
+}
+
+extension LoginController:RegisterControllerDelegate {
+    
+    func didFinish(user: User) {
+        cofigureField(user: user)
     }
 }

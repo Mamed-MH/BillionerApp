@@ -14,7 +14,6 @@ final class GetStartedController:UIViewController {
         super.viewDidLoad()
         
         configureButton()
-        
     }
     
     fileprivate func configureButton() {

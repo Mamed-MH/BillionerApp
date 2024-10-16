@@ -6,6 +6,12 @@
 //
 
 import UIKit
+
+protocol RegisterControllerDelegate:AnyObject {
+    
+    func didFinish(user:User)
+}
+
 final class RegisterController:UIViewController {
     
     @IBOutlet private weak var signUpBtn: UIButton!
@@ -15,6 +21,8 @@ final class RegisterController:UIViewController {
     @IBOutlet private weak var emailField: UITextField!
     @IBOutlet private weak var passwordField: UITextField!
     @IBOutlet weak var bgImage: UIImageView!
+    private var user:User?
+    weak var deleagate:RegisterControllerDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,13 +45,36 @@ final class RegisterController:UIViewController {
     @objc
     fileprivate func signUpButtonClicked() {
         
+        guard checkValidation() else {
+            print(#function, "Field cannot be empty")
+            return
+        }
+        guard let name = nameField.text,
+              let surname = surnameField.text,
+              let email = emailField.text,
+              let password = passwordField.text else {return}
         
+        user = User(name: name, surname: surname, email: email, password: password)
+        guard let user else {return}
+        deleagate?.didFinish(user: user)
+        
+        
+    }
+    
+    fileprivate func checkValidation() -> Bool {
+        guard let name = nameField.text,
+              let surname = surnameField.text,
+              let email = emailField.text,
+              let password = passwordField.text else {return false}
+        
+        return !(name.isEmpty || surname.isEmpty || email.isEmpty || password.isEmpty)
     }
     
     @objc
     fileprivate func loginButtonClicked() {
 
-        navigationController?.popViewController(animated: true)
+        let controller = UIStoryboard.init(name: "Auth", bundle: Bundle.main).instantiateViewController(identifier: "LoginController") as? LoginController ?? LoginController()
+        navigationController?.pushViewController(controller, animated: true)
     }
     
 }

@@ -56,11 +56,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		81088D912CB432EA00B2E646 /* BillionerApp */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BillionerApp;
-			sourceTree = "<group>";
-		};
 		81088DA82CB432EC00B2E646 /* BillionerAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = BillionerAppTests;
@@ -126,7 +121,6 @@
 				81088DC92CB4342100B2E646 /* App */,
 				81088DC72CB4340600B2E646 /* Main */,
 				81088DC82CB4340E00B2E646 /* Resource */,
-				81088D912CB432EA00B2E646 /* BillionerApp */,
 			);
 			path = BillionerApp;
 			sourceTree = "<group>";
@@ -208,9 +202,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				81088D912CB432EA00B2E646 /* BillionerApp */,
 			);
 			name = BillionerApp;
 			packageProductDependencies = (
